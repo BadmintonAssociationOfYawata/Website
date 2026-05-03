@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>八幡市バドミントン協会</title>
+
+  <!-- SEO用 -->
+  <meta name="description" content="京都府八幡市のバドミントン協会公式サイト。大会情報、イベント情報を掲載しています。">
+
+  <!-- OGP -->
+  <meta property="og:title" content="八幡市バドミントン協会">
+  <meta property="og:description" content="八幡市バドミントン協会の公式サイトです。">
+  <meta property="og:type" content="website">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="./page/COMMON/css/common.css">
+
+  <!--JS-->
+  <script src="./page/COMMON/js/sha256.min.js"></script>
+  <script src="./page/COMMON/js/common.js"></script>
+  <script src="./page/COMMON/js/demoCheck.js"></script>
+
+  <!--favicon-->
+  <link rel="icon" href="./page/COMMON/images/Logo/favicon.png">
+
+  <style>
+    body {
+      text-align: center;
+    }
+
+    a {
+      display: block;
+      margin: 10px;
+      font-size: 18px;
+    }
+    img{
+      width: 80%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="auth-overlay"></div>
+
+  <img src="./page/JPN/images/Logo/logo001.png" alt="八幡市バドミントン協会 ロゴ">
+
+  <h1>八幡市バドミントン協会</h1>
+
+  <p>
+    京都府八幡市のバドミントン協会の公式サイトです。<br>
+    大会情報、イベント、活動内容などをご覧いただけます。
+  </p>
+
+  <a href="./page/JPN/html/index.html">日本語ページへ</a>
+  <!-- 海外ページ対応後に復帰
+  <a href="./page/ENG/html/index.html">English</a>
+    -->
+
+  <span id="count"></span><span>秒後に自動で日本語ページに移動します</span>
+  <script>
+    window.addEventListener("load", () => {
+                checkDemoIndex();
+            });
+  </script>
+</body>
+</html>

@@ -86,3 +86,25 @@ function initHamburgerMenu() {
     
   });
 }
+
+//本番のみ
+function loadGoogleAnalytics() {
+    const gaId = "G-8C4F592Y4R"; // ← 自分の測定IDに変更
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtag/js?id=" + gaId;
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    window.gtag = gtag;
+
+    gtag("js", new Date());
+    gtag("config", gaId);
+}
+
+loadGoogleAnalytics();

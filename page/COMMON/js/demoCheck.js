@@ -1,5 +1,5 @@
 //デモモードをONにする場合はtrueに設定すること
-const isDemo = true;
+const isDemo = false;
 const correctPass = "51baec737194e5dd4dd59694a3d33d39911d24f9066873dccab79ea4f7398038";
 
 let waiteTime = 10;

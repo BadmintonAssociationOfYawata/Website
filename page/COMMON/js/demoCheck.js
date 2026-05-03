@@ -6,7 +6,6 @@ let waiteTime = 5;
 
 function checkDemoIndex() {
     if (isDemo == false) {
-        waiteTime = 10;
         document.getElementById("count").innerHTML = waiteTime;
         setTimeout(pastTime, 1000);
         checkOKProc();
